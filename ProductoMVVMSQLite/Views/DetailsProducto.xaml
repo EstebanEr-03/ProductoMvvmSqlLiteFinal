@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProductoMVVMSQLite.Views.DetailsProducto"
+             Title="DetailsProducto">
+    <StackLayout Padding="20" Spacing="10">
+        <Image Source="hasbi1.jpg"
+               HorizontalOptions="Center"
+               HeightRequest="200"
+               Aspect="AspectFit"/>
+
+        <Label x:Name="Nombre"
+               Text="{Binding _productoTraido.Nombre}"
+               FontSize="32"
+               TextColor="#3498db"
+               HorizontalOptions="Center"/>
+
+        <StackLayout Spacing="5">
+            <StackLayout Orientation="Horizontal" Spacing="5">
+                <Label Text="Descripcion: " FontSize="18" VerticalOptions="Center"/>
+                <Label x:Name="descripcion" Text="{Binding _productoTraido.Descripcion}" FontSize="18" VerticalOptions="Center"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Spacing="5">
+                <Label Text="Cantidad " FontSize="18" VerticalOptions="Center"/>
+                <Label x:Name="PrecioImportacion" Text="{Binding _productoTraido.Cantidad}" FontSize="18" VerticalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Button x:Name="Borrar"
+                    Text="Borrar"
+                    Command="{Binding ClickBorrarProducto}"
+                    FontSize="20"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="#e74c3c"/>
+            <Button x:Name="Editar"
+                    Text="Editar"
+                    Command="{Binding ClickEditarProducto}"
+                    FontSize="20"
+                    HorizontalOptions="FillAndExpand"
+                    TextColor="Black"
+                    BackgroundColor="#2ecc71"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

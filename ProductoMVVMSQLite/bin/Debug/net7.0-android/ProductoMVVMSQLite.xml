@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProductoMVVMSQLite</name>
+    </assembly>
+    <members>
+        <member name="T:ProductoMVVMSQLite.ViewModels.ProductoViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="F:ProductoMVVMSQLite.ViewModels.ProductoViewModel._traerProductosCommand">
+            <summary>The backing field for <see cref="P:ProductoMVVMSQLite.ViewModels.ProductoViewModel.traerProductosCommand"/>.</summary>
+        </member>
+        <member name="P:ProductoMVVMSQLite.ViewModels.ProductoViewModel.traerProductosCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:ProductoMVVMSQLite.ViewModels.ProductoViewModel.traerProductos"/>.</summary>
+        </member>
+    </members>
+</doc>
